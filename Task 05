@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int amount;
+    printf("Enter withdrawal amount: ");
+    scanf("%d", &amount);
+
+    if (amount <= 500) {
+        if (amount % 20 == 0) {
+            printf("Withdrawal approved\n");
+        } else {
+            printf("Withdrawal denied\n");
+        }
+    } else {
+        printf("Withdrawal denied\n");
+    }
+
+    return 0;
+}
